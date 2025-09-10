@@ -1,2 +1,2 @@
 # Haunted House Cleanup
-A horror comedy game created in godot
+A horror/comedy game created in godot
