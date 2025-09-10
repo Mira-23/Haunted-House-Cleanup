@@ -1,0 +1,72 @@
+[gd_scene load_steps=23 format=3 uid="uid://cqqljxuc20l1d"]
+
+[ext_resource type="PackedScene" uid="uid://c3rqkxxtuoi7y" path="res://Models/Main Rooms/couch_pillow.gltf" id="1_k12tt"]
+[ext_resource type="PackedScene" uid="uid://dnb75bjrwvnur" path="res://Models/Main Rooms/crushed_can.gltf" id="2_h1bgf"]
+[ext_resource type="PackedScene" uid="uid://cdk2vuap76lsh" path="res://Models/Main Rooms/cup.gltf" id="3_b3802"]
+[ext_resource type="PackedScene" uid="uid://542unw2nq35v" path="res://Models/Main Rooms/fishbone.gltf" id="4_fevyy"]
+[ext_resource type="PackedScene" uid="uid://bxy5ds0gaw10s" path="res://Models/Main Rooms/fridge_door.gltf" id="5_hibaj"]
+[ext_resource type="PackedScene" uid="uid://26g5ncmgswtn" path="res://Models/Main Rooms/full_teacup.gltf" id="6_ee4r6"]
+[ext_resource type="PackedScene" uid="uid://7wcaglin6py4" path="res://Models/Main Rooms/kettle.gltf" id="6_pdsj5"]
+[ext_resource type="PackedScene" uid="uid://byn8140qe8c7h" path="res://Models/Main Rooms/knife.gltf" id="7_ee4r6"]
+[ext_resource type="PackedScene" uid="uid://cc4p83ash6htr" path="res://Models/Main Rooms/leftovers.gltf" id="8_gt3je"]
+[ext_resource type="PackedScene" uid="uid://qlvxn3cdjfs2" path="res://Models/Main Rooms/lemon.gltf" id="9_3pmx8"]
+[ext_resource type="PackedScene" uid="uid://dsqhcms8t8lai" path="res://Models/Main Rooms/scortch1.gltf" id="10_u50mg"]
+[ext_resource type="PackedScene" uid="uid://dn8bepuo5njgf" path="res://Models/Main Rooms/scortch2.gltf" id="11_cbgmd"]
+[ext_resource type="PackedScene" uid="uid://cuaqqmh6hhfn6" path="res://Models/Main Rooms/main_basement_entry_door.gltf" id="11_gt3je"]
+[ext_resource type="PackedScene" uid="uid://cq2cq5ri4id6k" path="res://Models/Main Rooms/scortch3.gltf" id="12_1w6v2"]
+[ext_resource type="PackedScene" uid="uid://d35ayagk7uq3t" path="res://Models/Main Rooms/main_bathroom_door.gltf" id="12_3pmx8"]
+[ext_resource type="PackedScene" uid="uid://bh76n487ot6pd" path="res://Models/Main Rooms/main_bedroom_door.gltf" id="13_u50mg"]
+[ext_resource type="PackedScene" uid="uid://cpaj3u7j85f2c" path="res://Models/Main Rooms/scortch4.gltf" id="13_ueoa1"]
+[ext_resource type="PackedScene" uid="uid://cfligsoqpe68e" path="res://Models/Main Rooms/trash_can.gltf" id="14_6vcvc"]
+[ext_resource type="PackedScene" uid="uid://bpxwapbjh7hoh" path="res://Models/Main Rooms/main_laundry_door.gltf" id="14_cbgmd"]
+[ext_resource type="PackedScene" uid="uid://bseqtvm2prr0m" path="res://Models/Main Rooms/main_rooms.gltf" id="15_1w6v2"]
+[ext_resource type="PackedScene" uid="uid://dl34qxthv1dat" path="res://Models/Main Rooms/trash_lid.gltf" id="15_7k868"]
+[ext_resource type="PackedScene" uid="uid://7jya5qpksukq" path="res://Models/Main Rooms/vacuum.gltf" id="16_hpc6h"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="House" type="Node3D" parent="."]
+
+[node name="couch_pillow" parent="." instance=ExtResource("1_k12tt")]
+
+[node name="crushed_can" parent="." instance=ExtResource("2_h1bgf")]
+
+[node name="cup" parent="." instance=ExtResource("3_b3802")]
+
+[node name="fishbone" parent="." instance=ExtResource("4_fevyy")]
+
+[node name="fridge_door" parent="." instance=ExtResource("5_hibaj")]
+
+[node name="full_teacup" parent="." instance=ExtResource("6_ee4r6")]
+
+[node name="kettle" parent="." instance=ExtResource("6_pdsj5")]
+
+[node name="knife" parent="." instance=ExtResource("7_ee4r6")]
+
+[node name="leftovers" parent="." instance=ExtResource("8_gt3je")]
+
+[node name="lemon" parent="." instance=ExtResource("9_3pmx8")]
+
+[node name="main_basement_entry_door" parent="." instance=ExtResource("11_gt3je")]
+
+[node name="main_bathroom_door" parent="." instance=ExtResource("12_3pmx8")]
+
+[node name="main_bedroom_door" parent="." instance=ExtResource("13_u50mg")]
+
+[node name="main_laundry_door" parent="." instance=ExtResource("14_cbgmd")]
+
+[node name="main_rooms" parent="." instance=ExtResource("15_1w6v2")]
+
+[node name="scortch1" parent="." instance=ExtResource("10_u50mg")]
+
+[node name="scortch2" parent="." instance=ExtResource("11_cbgmd")]
+
+[node name="scortch3" parent="." instance=ExtResource("12_1w6v2")]
+
+[node name="scortch4" parent="." instance=ExtResource("13_ueoa1")]
+
+[node name="trash_can" parent="." instance=ExtResource("14_6vcvc")]
+
+[node name="trash_lid" parent="." instance=ExtResource("15_7k868")]
+
+[node name="vacuum" parent="." instance=ExtResource("16_hpc6h")]
