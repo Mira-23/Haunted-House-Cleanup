@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cf2dbajqa1k4r"
-path="res://.godot/imported/vacuum.gltf-1555d5ec89f374bb301db158c09fc9ae.scn"
+uid="uid://bp72oqe5dqtjd"
+path="res://.godot/imported/main_area.gltf-1f9749a0a0ae5d81344d58fc0e0ffea9.scn"
 
 [deps]
 
-source_file="res://Models/Main Rooms/vacuum.gltf"
-dest_files=["res://.godot/imported/vacuum.gltf-1555d5ec89f374bb301db158c09fc9ae.scn"]
+source_file="res://Models/Main Rooms/main_area.gltf"
+dest_files=["res://.godot/imported/main_area.gltf-1f9749a0a0ae5d81344d58fc0e0ffea9.scn"]
 
 [params]
 

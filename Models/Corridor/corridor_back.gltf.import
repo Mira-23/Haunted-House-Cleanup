@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bseqtvm2prr0m"
-path="res://.godot/imported/main_rooms.gltf-174679ee08495b01cc8d35780f63419d.scn"
+uid="uid://0pnoamfal4np"
+path="res://.godot/imported/corridor_back.gltf-3b9481fe377bb71fe8bba8ae3d046575.scn"
 
 [deps]
 
-source_file="res://Models/Main Rooms/main_rooms.gltf"
-dest_files=["res://.godot/imported/main_rooms.gltf-174679ee08495b01cc8d35780f63419d.scn"]
+source_file="res://Models/Corridor/corridor_back.gltf"
+dest_files=["res://.godot/imported/corridor_back.gltf-3b9481fe377bb71fe8bba8ae3d046575.scn"]
 
 [params]
 
