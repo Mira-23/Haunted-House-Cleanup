@@ -1,15 +1,3 @@
-[gd_scene load_steps=2 format=3 uid="uid://siwfp2bu4luw"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ee4r6"]
-size = Vector3(0.193848, 0.0309448, 0.246109)
+[gd_scene format=3 uid="uid://bc0cx3um7kf7w"]
 
 [node name="Leftovers" type="Node3D"]
-
-[node name="Area3D" type="Area3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.250247, 0.799524, -0.12944)
-shape = SubResource("BoxShape3D_ee4r6")
-
-[connection signal="mouse_entered" from="Area3D" to="." method="_on_area_3d_mouse_entered"]
-[connection signal="mouse_exited" from="Area3D" to="." method="_on_area_3d_mouse_exited"]

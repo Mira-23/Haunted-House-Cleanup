@@ -8,7 +8,7 @@
 size = Vector3(0.433472, 0.75351, 0.4021)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8cuat"]
-size = Vector3(1, 1, 0.798706)
+size = Vector3(0.699951, 1, 0.798706)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vpc0x"]
 resource_name = "Palette"
@@ -104,10 +104,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0297241, 0.365616, -0.01623
 shape = SubResource("BoxShape3D_aqgau")
 
 [node name="Area3D" type="Area3D" parent="."]
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.323963, 0.0182757)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.150024, 0.323963, 0.0182757)
 shape = SubResource("BoxShape3D_8cuat")
 
 [node name="trash_can" type="MeshInstance3D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=4 uid="uid://cqqljxuc20l1d"]
+[gd_scene load_steps=73 format=4 uid="uid://cqqljxuc20l1d"]
 
 [ext_resource type="PackedScene" uid="uid://bp72oqe5dqtjd" path="res://Models/Main Rooms/main_area.gltf" id="1_ee4r6"]
 [ext_resource type="PackedScene" uid="uid://c3rqkxxtuoi7y" path="res://Models/Main Rooms/couch_pillow.gltf" id="1_k12tt"]
@@ -9,14 +9,15 @@
 [ext_resource type="Script" uid="uid://bw2og7rfstmg7" path="res://Scripts/leftovers.gd" id="7_gt3je"]
 [ext_resource type="Shader" uid="uid://cyhkl16adhs0g" path="res://Shaders/outline.gdshader" id="9_3pmx8"]
 [ext_resource type="Texture2D" uid="uid://yagrq7cytnxt" path="res://Models/Textures/palette1.png" id="10_cbgmd"]
+[ext_resource type="PackedScene" uid="uid://dsqhcms8t8lai" path="res://Models/Main Rooms/scortch1.gltf" id="10_u50mg"]
+[ext_resource type="PackedScene" uid="uid://dn8bepuo5njgf" path="res://Models/Main Rooms/scortch2.gltf" id="11_cbgmd"]
 [ext_resource type="PackedScene" uid="uid://cuaqqmh6hhfn6" path="res://Models/Main Rooms/main_basement_entry_door.gltf" id="11_gt3je"]
-[ext_resource type="Script" uid="uid://ckbiw80wgo5li" path="res://Scripts/scortch_marks.gd" id="11_pdsj5"]
+[ext_resource type="PackedScene" uid="uid://cq2cq5ri4id6k" path="res://Models/Main Rooms/scortch3.gltf" id="12_1w6v2"]
 [ext_resource type="PackedScene" uid="uid://d35ayagk7uq3t" path="res://Models/Main Rooms/main_bathroom_door.gltf" id="12_3pmx8"]
 [ext_resource type="PackedScene" uid="uid://bh76n487ot6pd" path="res://Models/Main Rooms/main_bedroom_door.gltf" id="13_u50mg"]
+[ext_resource type="PackedScene" uid="uid://cpaj3u7j85f2c" path="res://Models/Main Rooms/scortch4.gltf" id="13_ueoa1"]
 [ext_resource type="PackedScene" uid="uid://bpxwapbjh7hoh" path="res://Models/Main Rooms/main_laundry_door.gltf" id="14_cbgmd"]
-[ext_resource type="Texture2D" uid="uid://tr2evyxw8ih3" path="res://Models/Textures/scorch burn mark.png" id="14_gt3je"]
 [ext_resource type="PackedScene" uid="uid://cf2dbajqa1k4r" path="res://Models/Main Rooms/vacuum.gltf" id="16_hpc6h"]
-[ext_resource type="Script" uid="uid://bmkxnijb8vgxx" path="res://Scripts/camera_management.gd" id="20_gt3je"]
 [ext_resource type="PackedScene" uid="uid://00gqbm73hox2" path="res://Scenes/player.tscn" id="23_gt3je"]
 [ext_resource type="Shader" uid="uid://dsuace6hfjvur" path="res://Shaders/NewVHS.gdshader" id="24_3pmx8"]
 [ext_resource type="Texture2D" uid="uid://ct6jbfwhjapu1" path="res://Models/Textures/colormap.png" id="24_cbgmd"]
@@ -346,172 +347,6 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_y2qk3")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_hibaj"]
-size = Vector3(1.18213, 0.996704, 1.14258)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii1cy"]
-resource_name = "scorch burn mark"
-transparency = 4
-cull_mode = 2
-albedo_texture = ExtResource("14_gt3je")
-roughness = 0.5
-texture_repeat = false
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_etbqd"]
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"format": 34896613377,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_ueoa1"]
-resource_name = "scortch1_scorch burn mark"
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
-"format": 34896613399,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_ii1cy"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_etbqd")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_txbeh"]
-resource_name = "scorch burn mark"
-transparency = 4
-cull_mode = 2
-albedo_texture = ExtResource("14_gt3je")
-roughness = 0.5
-texture_repeat = false
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_78l1n"]
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"format": 34896613377,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_hpc6h"]
-resource_name = "scortch2_scorch burn mark_001"
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
-"format": 34896613399,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_txbeh"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_78l1n")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5dbq1"]
-resource_name = "scorch burn mark"
-transparency = 4
-cull_mode = 2
-albedo_texture = ExtResource("14_gt3je")
-roughness = 0.5
-texture_repeat = false
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_ituww"]
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"format": 34896613377,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP//AAD//wAAAAAAAP//AAD//wAAAAAAAAAAAAA=")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_pdsj5"]
-resource_name = "scortch3_scorch burn mark_002"
-_surfaces = [{
-"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1),
-"attribute_data": PackedByteArray("AAD/////AAD/////AAAAAA=="),
-"format": 34896613399,
-"index_count": 6,
-"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
-"material": SubResource("StandardMaterial3D_5dbq1"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 4,
-"vertex_data": PackedByteArray("AAAAAP///7///wAAAAD/v///AAD///+/AAAAAAAA/7////9/////f////3////9/")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_ituww")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8050"]
-resource_name = "scorch burn mark"
-transparency = 4
-cull_mode = 2
-albedo_texture = ExtResource("14_gt3je")
-roughness = 0.5
-texture_repeat = false
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_2ckjs"]
-_surfaces = [{
-"aabb": AABB(-0.0177506, 0, -0.5, 0.517751, 0.608988, 1),
-"format": 34896613377,
-"index_count": 12,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAADAAAABAAFAAMA"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 6,
-"vertex_data": PackedByteArray("xggAAP//AAD//wAAAAAAAP//AAD//wAAxggAAAAAAAAAAP///v8AAAAA//8AAAAA")
-}]
-blend_shape_mode = 0
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_hibaj"]
-resource_name = "scortch4_scorch burn mark_003"
-_surfaces = [{
-"aabb": AABB(-0.0177506, 0, -0.5, 0.517751, 0.608988, 1),
-"attribute_data": PackedByteArray("/3//////AAD//////38AAAAA////fwAA/3///wAAAAA="),
-"format": 34896613399,
-"index_count": 12,
-"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUA"),
-"material": SubResource("StandardMaterial3D_y8050"),
-"name": "scorch burn mark",
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 8,
-"vertex_data": PackedByteArray("xggAAP///7///wAAAAD/v///AAD///+/xggAAAAA/78AAP///v+m1MYIAAAAAKbUxggAAP//ptQAAP//AACm1P///3////9/////f////39+q79Vfqu/VX6rv1V+q79V")
-}]
-blend_shape_mode = 0
-shadow_mesh = SubResource("ArrayMesh_2ckjs")
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_aa8k8"]
-size = Vector3(0.12854, 0.64502, 0.515259)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3jrlc"]
 resource_name = "Palette"
 cull_mode = 2
@@ -802,47 +637,33 @@ mesh = SubResource("ArrayMesh_1w6v2")
 skeleton = NodePath("")
 
 [node name="Scortch Marks" type="Node3D" parent="House/Kitchen"]
-script = ExtResource("11_pdsj5")
 
-[node name="Area3D" type="Area3D" parent="House/Kitchen/Scortch Marks"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.876874, 1.61685)
+[node name="scortch1" parent="House/Kitchen/Scortch Marks" instance=ExtResource("10_u50mg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.31398, 0, 0.868547)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="House/Kitchen/Scortch Marks/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0910645, 0.258606, -0.0712891)
-shape = SubResource("BoxShape3D_hibaj")
+[node name="scortch2" parent="House/Kitchen/Scortch Marks" instance=ExtResource("11_cbgmd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.31398, 0, 0.868547)
 
-[node name="scorch_burn_mark1" type="MeshInstance3D" parent="House/Kitchen/Scortch Marks"]
-transform = Transform3D(0, -7.28956e-08, -0.394507, 7.28956e-08, -0.394507, 7.28956e-08, -0.394507, -7.28956e-08, 1.34694e-14, 0.541305, 0.95755, 1.35168)
-mesh = SubResource("ArrayMesh_ueoa1")
-skeleton = NodePath("")
+[node name="scortch3" parent="House/Kitchen/Scortch Marks" instance=ExtResource("12_1w6v2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.31398, 0, 0.868547)
 
-[node name="scorch_burn_mark2" type="MeshInstance3D" parent="House/Kitchen/Scortch Marks"]
-transform = Transform3D(-3.76119e-08, -5.8299e-08, -0.315511, 5.8299e-08, -0.315511, 5.8299e-08, -0.315511, -5.8299e-08, 3.76119e-08, 0.383143, 0.95755, 1.68221)
-mesh = SubResource("ArrayMesh_hpc6h")
-skeleton = NodePath("")
-
-[node name="scorch_burn_mark3" type="MeshInstance3D" parent="House/Kitchen/Scortch Marks"]
-transform = Transform3D(0, -2.21066e-07, -0.529839, 0.529839, -3.15808e-08, 1.31766e-14, -3.15808e-08, -0.529839, 2.21066e-07, 0.0364704, 1.42026, 1.86335)
-mesh = SubResource("ArrayMesh_pdsj5")
-skeleton = NodePath("")
-
-[node name="scorch_burn_mark4" type="MeshInstance3D" parent="House/Kitchen/Scortch Marks"]
-transform = Transform3D(0, -1.75215e-07, -0.419945, 0.419945, -2.50307e-08, 1.04436e-14, -2.50307e-08, -0.419945, 1.75215e-07, -0.388193, 0.954307, 1.86335)
-mesh = SubResource("ArrayMesh_hibaj")
-skeleton = NodePath("")
+[node name="scortch4" parent="House/Kitchen/Scortch Marks" instance=ExtResource("13_ueoa1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.31398, 0, 0.868547)
 
 [node name="Knife" type="Node3D" parent="House/Kitchen"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.517, 0.981, 1.303)
+script = ExtResource("7_gt3je")
+material = ExtResource("7_3pmx8")
 
 [node name="Area3D" type="Area3D" parent="House/Kitchen/Knife"]
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="House/Kitchen/Knife/Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00238419, 0.0634913, -0.218576)
-shape = SubResource("BoxShape3D_aa8k8")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.139652, 1.19613, 0.360587)
+shape = SubResource("BoxShape3D_kwxat")
 
 [node name="model" type="MeshInstance3D" parent="House/Kitchen/Knife"]
 transform = Transform3D(0.0085959, -0.00338838, -0.00609115, 0.00612044, 0.0106604, 0.00270707, 0.00847772, -0.00700276, 0.00840949, -0.0111136, 0.114214, -0.0321235)
+material_overlay = ExtResource("7_3pmx8")
 mesh = SubResource("ArrayMesh_6vcvc")
 skeleton = NodePath("")
 
@@ -861,7 +682,6 @@ skeleton = NodePath("../..")
 metadata/_edit_lock_ = true
 
 [node name="Cameras" type="Node3D" parent="."]
-script = ExtResource("20_gt3je")
 
 [node name="Main Hallway Camera" type="Camera3D" parent="Cameras"]
 transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, -2.76856, 2.302, 4.73002)
@@ -878,9 +698,6 @@ transform = Transform3D(0.146083, 0.338351, -0.929612, 0, 0.939693, 0.34202, 0.9
 [node name="Fridge Camera" type="Camera3D" parent="Cameras"]
 transform = Transform3D(0.522499, -0.333153, 0.784859, 0, 0.920505, 0.390731, -0.85264, -0.204156, 0.480962, -6.23636, 1.32969, -1.45158)
 fov = 73.8389
-
-[node name="Scortch Camera" type="Camera3D" parent="Cameras"]
-transform = Transform3D(-1, 0, 0, 0, 0.937974, 0.346706, 0, 0.346707, -0.937974, -5.13608, 1.47716, 0.00481635)
 
 [node name="Lights" type="Node3D" parent="."]
 
@@ -1048,9 +865,10 @@ mouse_filter = 1
 [connection signal="input_event" from="House/Kitchen/Fridge/Lemon/Area3D" to="House/Kitchen/Fridge/Lemon" method="_on_area_3d_input_event"]
 [connection signal="mouse_entered" from="House/Kitchen/Fridge/Lemon/Area3D" to="House/Kitchen/Fridge/Lemon" method="_on_area_3d_mouse_entered"]
 [connection signal="mouse_exited" from="House/Kitchen/Fridge/Lemon/Area3D" to="House/Kitchen/Fridge/Lemon" method="_on_area_3d_mouse_exited"]
-[connection signal="body_entered" from="House/Kitchen/Scortch Marks/Area3D" to="House/Kitchen/Scortch Marks" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="House/Kitchen/Scortch Marks/Area3D" to="House/Kitchen/Scortch Marks" method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Areas/Hallway" to="Cameras" method="_on_hallway_body_entered"]
-[connection signal="body_entered" from="Areas/MainHall" to="Cameras" method="_on_main_hall_body_entered"]
-[connection signal="body_entered" from="Areas/Kitchen" to="Cameras" method="_on_kitchen_body_entered"]
-[connection signal="body_entered" from="Areas/Corridor" to="Cameras" method="_on_corridor_body_entered"]
+[connection signal="input_event" from="House/Kitchen/Knife/Area3D" to="House/Kitchen/Knife" method="_on_area_3d_input_event"]
+[connection signal="mouse_entered" from="House/Kitchen/Knife/Area3D" to="House/Kitchen/Knife" method="_on_area_3d_mouse_entered"]
+[connection signal="mouse_exited" from="House/Kitchen/Knife/Area3D" to="House/Kitchen/Knife" method="_on_area_3d_mouse_exited"]
+[connection signal="body_entered" from="Areas/Hallway" to="Player" method="_on_hallway_body_entered"]
+[connection signal="body_entered" from="Areas/MainHall" to="Player" method="_on_main_hall_body_entered"]
+[connection signal="body_entered" from="Areas/Kitchen" to="Player" method="_on_kitchen_body_entered"]
+[connection signal="body_entered" from="Areas/Corridor" to="Player" method="_on_corridor_body_entered"]

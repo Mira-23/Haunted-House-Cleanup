@@ -1,62 +1,18 @@
 extends CharacterBody3D
 
-# How fast the player moves in meters per second.
-@export var speed = 4
+const SPEED: float = 4
+
+@export var curr_speed: float = SPEED
+@export var current_camera: Camera3D
 
 var target_velocity = Vector3.ZERO
 
-@onready var main_hallway_camera: Camera3D = $"../Cameras/Main Hallway Camera"
-@onready var main_room_camera: Camera3D = $"../Cameras/Main Room Camera"
-@onready var kitchen_camera: Camera3D = $"../Cameras/Kitchen Camera"
-@onready var corridor_camera: Camera3D = $"../Cameras/Corridor Camera"
-@onready var fridge_camera: Camera3D = $"../Cameras/Fridge Camera"
-@onready var fridge_door: Node3D = $"../House/Kitchen/Fridge/FridgeDoor"
 
-var current_camera: Camera3D
+func pause_player() -> void:
+	curr_speed = 0
 
-func _ready():
-	fridge_door.opened_fridge.connect(enter_fridge_mode)
-	fridge_door.closed_fridge.connect(close_fridge_mode)
-	current_camera = main_hallway_camera
-
-
-func _on_hallway_body_entered(body: Node3D) -> void:
-	if body is CharacterBody3D:
-		main_hallway_camera.make_current()
-		current_camera = main_hallway_camera
-
-
-func _on_main_hall_body_entered(body: Node3D) -> void:
-	if body is CharacterBody3D:
-		main_room_camera.make_current()
-		current_camera = main_room_camera
-
-
-func _on_kitchen_body_entered(body: Node3D) -> void:
-	if body is CharacterBody3D:
-		kitchen_camera.make_current()
-		current_camera = kitchen_camera
-
-
-func _on_corridor_body_entered(body: Node3D) -> void:
-	if body is CharacterBody3D:
-		corridor_camera.make_current()
-		current_camera = corridor_camera
-
-
-func enter_fridge_mode() -> void:
-	fridge_camera.make_current()
-	current_camera = fridge_camera
-	speed = 0
-	self.visible = false
-
-
-func close_fridge_mode() -> void:
-	kitchen_camera.make_current()
-	current_camera = kitchen_camera
-	speed = 4
-	self.visible = true
-
+func unpause_player() -> void:
+	curr_speed = SPEED
 
 func _physics_process(_delta):
 	var direction = Vector3.ZERO
@@ -86,8 +42,8 @@ func _physics_process(_delta):
 		var target_basis = Basis.looking_at(move_dir, Vector3.UP)
 		$Pivot.basis = $Pivot.basis.slerp(target_basis, turn_speed * _delta)
 
-		target_velocity.x = move_dir.x * speed
-		target_velocity.z = move_dir.z * speed
+		target_velocity.x = move_dir.x * curr_speed
+		target_velocity.z = move_dir.z * curr_speed
 	else:
 		target_velocity.x = 0
 		target_velocity.z = 0
